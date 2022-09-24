@@ -8,39 +8,39 @@
     <title>PILLZ</title>
 </head>
 <body>
-    <section class="banner">
-        <header>
-            <a href="#" class="logo"><img src="images/logo.png"></a>
-            <div class="toggle" onclick="toggle();"></div>
-        </header>
-        <div class="content">
-            <div class="contentBx">
-                <h2>It's time to awake<br><span>Your power</span></h2>
+    <nav>
+        <div class="navbar">
+            <div class="container">
+                <img src="images/logo.png">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Capsules</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <section class="sec1">
+        <div class="container">
+            <div class="left">
+                <h1>It's time to awake<br><span>Your power</span></h1>
                 <p>How about a pill that unlocks super abilities for 1 hour ? 
                     <br/>With one of the "5" pills you will be able to realise your deepest dream : To become a superhero !
                     <br/>Manipulating time and space, running at the speed of light, or have superhuman strength. 
                     <br/>Here are the few powers known so far from our tests. 
                 </p>
-                <a href="#">View all capsules</a>
+                <ul class="thumb">
+                    <li><img src="images/Velvet.png" onclick="imgSlider('images/Velvet.png');changeBgColor('linear-gradient(90deg, rgba(39,0,88,1) 0%, rgba(51,0,100,1) 35%, rgba(125,0,169,1) 100%)')"></li>
+                    <li><img src="images/Tesseract.png" onclick="imgSlider('images/Tesseract.png');changeBgColor('linear-gradient(to right, #000428, #004e92)')"></li>
+                    <li><img src="images/Emerald.png" onclick="imgSlider('images/Emerald.png');changeBgColor('linear-gradient(to right, #000000, #0f9b0f)')"></li>
+                    <li><img src="images/Aether.png" onclick="imgSlider('images/Aether.png');changeBgColor('linear-gradient(to right, #3e0101, #980404)')"></li>
+                    <li><img src="images/Geist.png" onclick="imgSlider('images/Geist.png');changeBgColor('linear-gradient(to right, #181818, #ba8b02)')"></li>
+                </ul>
             </div>
-            <div class="imgBx">
+            <div class="right">
                 <img src="images/Velvet.png" class="capsule">
             </div>
         </div>
-        <ul class="thumb">
-            <li><img src="images/Tesseract.png" onclick="imgSlider('images/Tesseract.png');changeBgColor('linear-gradient(to right, #000428, #004e92)')"></li>
-            <li><img src="images/Emerald.png" onclick="imgSlider('images/Emerald.png');changeBgColor('linear-gradient(to right, #000000, #0f9b0f)')"></li>
-            <li><img src="images/Aether.png" onclick="imgSlider('images/Aether.png');changeBgColor('linear-gradient(to right, #3e0101, #980404)')"></li>
-            <li><img src="images/Geist.png" onclick="imgSlider('images/Geist.png');changeBgColor('linear-gradient(to right, #181818, #ba8b02)')"></li>
-        </ul>
-        <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Capsules</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul> 
     </section>
-
 
     <script src="app.js"></script>
 </body>

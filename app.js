@@ -1,15 +1,9 @@
-function toggle() {
-  const toggle = document.querySelector(".toggle");
-  const banner = document.querySelector(".banner");
-  toggle.classList.toggle("active");
-  banner.classList.toggle("active");
-}
-
+//Capsules Slider
 function imgSlider(anything) {
   document.querySelector(".capsule").src = anything;
 }
 
 function changeBgColor(color) {
-  const banner = document.querySelector(".banner");
-  banner.style.background = color;
+  const changeColor = document.querySelector("body");
+  changeColor.style.background = color;
 }
