@@ -154,3 +154,98 @@ body {
         margin: 20px 35px;
     }
 }
+
+/* Section 2 */
+
+.sec2 {
+    margin: 250px 0;
+}
+
+.sec2 .container {
+    display: flex;
+    align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.sec2 .container .big-card {
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 20px 10px #fff;
+    animation: shadow 5s infinite ease-in-out;
+}
+
+@keyframes shadow {
+    0% {
+        box-shadow: 0px 0px 45px 30px #fff;
+    }
+
+    20% {
+        box-shadow: 0px 0px 45px 0px #fff;
+    }
+
+    40% {
+        box-shadow: 0px 0px 45px 15px #fff;
+    }
+
+    70% {
+        box-shadow: 0px 0px 45px -10px #fff;
+    }
+
+    100% {
+        box-shadow: 0px 0px 45px 30px #fff;
+    }
+}
+
+.sec2 .container .big-card .arrow::before {
+    content: "\f107";
+    font-family: "FontAwesome";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 50px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    color: black;
+}
+
+.sec2 .container .big-card .left {
+    margin-right: 80px;
+}
+
+.sec2 .container .big-card .left img {
+    position: relative;
+}
+
+.sec2 .container .big-card .right {
+    max-width: 500px;
+}
+
+.sec2 .container .big-card .right h4 {
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.sec2 .container .big-card .right h1 {
+    color: #fff;
+    font-size: 5em;
+    margin-bottom: 30px;
+}
+
+.sec2 .container .big-card .right p {
+    color: #fff;
+    line-break: anywhere;
+}
