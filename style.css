@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -139,6 +140,12 @@ body {
         align-items: center;
     }
 
+    .sec1 .thumb {
+        position: flex;
+        margin-top: 1300px;
+        margin-left: 110px;
+    }
+
     .sec1 .right img {
         margin-top: 50px;
         width: 90%;
@@ -154,6 +161,7 @@ body {
         margin: 20px 35px;
     }
 }
+
 
 /* Section 2 */
 
@@ -241,11 +249,126 @@ body {
 
 .sec2 .container .big-card .right h1 {
     color: #fff;
-    font-size: 5em;
+    font-size: 2em;
     margin-bottom: 30px;
 }
 
 .sec2 .container .big-card .right p {
     color: #fff;
     line-break: anywhere;
+}
+
+/* Responsive */
+
+@media (max-width: 1190px) {
+    .sec2 .big-card .right {
+        margin-bottom: 30px;
+    }
+
+    .sec2 .big-card .left {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .sec2 .big-card .right {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .sec2 .big-card .right h1 {
+        font-size: 4em;
+    }
+
+    .sec2 .big-card .right p {
+        margin: 0 30px;
+    }
+
+    .sec2 .big-card img {
+        width: 100%;
+    }
+}
+
+/* Section 3 */
+
+.sec3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec3 .title h4 {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.sec3 .title h1 {
+    color: #fff;
+    font-size: 4em;
+}
+
+.sec3 .container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1500px;
+    margin: 50px auto;
+}
+
+.sec3 .container .left {
+    max-width: 320px;
+    text-align: right;
+}
+
+.sec3 .container .right {
+    max-width: 320px;
+}
+
+.sec3 .container .left, .sec3 .container .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.sec3 .container h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.sec3 .container p {
+    color: #fff;
+}
+
+/* Responsive */
+
+@media (max-width: 1050px) {
+    .sec3 .mid {
+        display: none;
+    }
+
+    .sec3 .container {
+        flex-direction: column;
+    }
+
+    .sec3 .container .right, 
+    .sec3 .container .left {
+        max-width: 600px;
+        margin: 0 30px;
+    }
+
+    .sec3 .title, 
+    .sec3 .container h2, 
+    .sec3 .container p {
+        text-align: center;
+    }
+
+    .sec3 .top, 
+    .sec3 .bottom {
+        margin: 30px 0;
+    }
+}
+
+@media (max-width: 550px) {
+    .sec3 .title h1 {
+        font-size: 3em;
+    }
 }
