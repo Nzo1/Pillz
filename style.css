@@ -83,7 +83,7 @@ body {
 
 .sec1 .container .left .thumb {
     position: absolute;
-    left: 400px;
+    left: 420px;
     transform: translateX(-50%);
     display: flex;
 }
@@ -143,7 +143,7 @@ body {
     .sec1 .thumb {
         position: flex;
         margin-top: 1300px;
-        margin-left: 110px;
+        margin-left: 150px;
     }
 
     .sec1 .right img {
