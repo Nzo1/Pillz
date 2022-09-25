@@ -255,7 +255,11 @@ body {
 
 .sec2 .container .big-card .right p {
     color: #fff;
-    line-break: anywhere;
+    margin-bottom: 30px;
+}
+
+.sec2 .container .big-card .right p span {
+    line-height: 30px;
 }
 
 /* Responsive */
