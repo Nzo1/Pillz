@@ -7,9 +7,15 @@
 
     <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/0c87a70838.js"></script>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="style.css">
+
     <title>PILLZ</title>
+
 </head>
 <body>
     <nav>
@@ -126,6 +132,124 @@
         </div>     
     </section>
 
+    <section class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+            <div class="card swiper-slide">
+                <div class="card__image" style="border: 5px solid #855DFF;">
+                    <img src="images/card01.png" style="background: #7400A1;">
+                </div>
+                <div class="card__content">
+                    <span class="card__title">N°01</span>
+                    <span class="card__name">VELVET</span>
+                    <p class="card__text">
+                        Velvet is one of the five capsules of the Power Project, the remnant of a singularity before the universe.<br/>
+                        Velvet is a powerful weapon capable of granting great destructive power.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card swiper-slide">
+                <div class="card__image" style="border: 5px solid #0587FE;">
+                    <img src="images/card02.png" style="background: #004D90;">
+                </div>
+                <div class="card__content">
+                    <span class="card__title">N°02</span>
+                    <span class="card__name">TESSERACT</span>
+                    <p class="card__text">
+                        This capsule is used to open portals to other locations and can allow interdimensional travel.<br/>
+                        In the case that the transformation fails, the carrier could be projected into a dimension still unknown to this day. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="card swiper-slide">
+                <div class="card__image" style="border: 5px solid #059F10;">
+                    <img src="images/card03.png" style="background: #0F970F;">
+                </div>
+                <div class="card__content">
+                    <span class="card__title">N°03</span>
+                    <span class="card__name">EMERALD</span>
+                    <p class="card__text">
+                        This capsule could be used to individually change the timeline of individual objects.<br/> 
+                        Reversing them to a previous state or sending the object to a future state.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card swiper-slide">
+                <div class="card__image" style="border: 5px solid #790101;">
+                    <img src="images/card04.png" style="background: #950404;">
+                </div>
+                <div class="card__content">
+                    <span class="card__title">N°04</span>
+                    <span class="card__name">AETHER</span>
+                    <p class="card__text">
+                        The power of the Aether capsule is such that it can affect reality on a universal scale.<br/> 
+                        Those who fully understand its capabilities can safely absorb it into themselves, as long as they have the courage to resist its effect.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card swiper-slide">
+                <div class="card__image" style="border: 5px solid #9C6D00;">
+                    <img src="images/card05.png" style="background: #B88902;">
+                </div>
+                <div class="card__content">
+                    <span class="card__title">N°05</span>
+                    <span class="card__name">GEIST</span>
+                    <p class="card__text">
+                        Geist grants whoever holds it total control over the hearts and minds of others.<br/> 
+                        The capsule contains a very advanced intelligence framework functioning in the same way as a sentient mind.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card swiper-slide">
+                <div class="card__image" style="border: 5px solid #E435BD;">
+                    <img src="images/card06.png" style="background: #297AD4;">
+                </div>
+                <div class="card__content">
+                    <span class="card__title">N°06</span>
+                    <span class="card__name">ARGON</span>
+                    <p class="card__text">
+                        xxxxxxxxxxxxxxxxxxxxxx.<br/>
+                        xxxxxxxxxxxxxxx.<br/>
+                        xxxxxxxxxxxxxxxxxxxxxx.<br/>
+                        xxxxxxxxxxxxxxx.<br/>
+                        xxxxxxxxxxxxxxxxxxxxxx.<br/>
+                        xxxxxxxxxxxxxxx.<br/>
+                        xxxxxxxxxxxxxxx.<br/>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
     <script src="app.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 300,
+                modifier: 1,
+                slideShadows: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
 </body>
 </html>
